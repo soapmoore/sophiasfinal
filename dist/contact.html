@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
+    </style>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <title>Sophia's Pet Shop - Contact</title>
+  </head>
+  <body class="">
+    <div class="content">
+      <h1 id="title">Contact Us</h1>
+      <form name="contact" method="POST" action="/" autocomplete="true">
+        <fieldset id="fieldset">
+          <h2>Enter your info here:</h2>
+          <label for="name">Your name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            required
+            autocomplete="off"
+            autofocus
+          />
+
+          <label for="email">Email address</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Email"
+            required
+            autocomplete="off"
+          />
+
+          <label for="number">Phone Number</label>
+          <input
+            type="number"
+            name="number"
+            min="0000000000"
+            max="9999999999"
+            required
+            placeholder="Your 10-digit phone number"
+          />
+
+          <label for="message">Your message</label>
+          <textarea
+            name="message"
+            id="message"
+            placeholder="Your message"
+            rows="7"
+          ></textarea>
+
+          <button type="submit" name="submit">Send Message</button>
+        </fieldset>
+      </form>
+    </div>
+
+    <script src="/js/scripts.js"></script>
+
+    <nav>
+      <input id="nav-toggle" type="checkbox" />
+      <div class="logo">
+        Sophia's<br />
+        <strong> Pet Shop</strong>
+      </div>
+      <ul class="links">
+        <li onClick="home()"><a href="#home">Home</a></li>
+        <li onClick="about()"><a href="#about">About</a></li>
+        <li onClick="contact()"><a href="#contact">Contact</a></li>
+        <li onClick="pets()"><a href="#pets">Pets</a></li>
+        <li onClick="pictures()"><a href="#pictures">Pictures</a></li>
+      </ul>
+      <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+    </nav>
+
+    <footer>
+      <p>
+        This page is still under construction! Feedback appreciated. Copyright
+        2021. All Rights Reserved
+      </p>
+    </footer>
+  </body>
+</html>
